@@ -1,0 +1,41 @@
+name: raft
+
+dropout: 0.0
+alternate_corr: false
+small: false
+corr_levels: 4
+corr_radius: 4
+iters: 12
+mixed_precision: false
+corr_resolution: 8
+optimization_search_space_dim: 1
+wo_convex_upsampling: false
+unet_backbone: false
+unimatch_weights_path: "checkpoints/gmdepth-scale1-resumeflowthings-scannet-5d9d7964.pth"
+wo_backbone_cross_attn: false
+use_epipolar_trans: false
+multiview_trans_attn_split: 2
+disparity_init: random
+near_depth_plane: 0.1
+far_depth_plane: 100
+scale_disp_update: 1.0
+scale_density_update: 1.0
+scale_gaussian_update: 1.0
+upsampler_normalization: none
+context_based_upsampling_iters: last
+scale_multiplier_up_mask: 1.0
+
+opacity_mapping:
+  initial: 0.0
+  final: 0.0
+  warm_up: 1
+
+num_surfaces: 1
+gaussians_per_pixel: 1
+num_depth_candidates: 128
+gaussian_sampling_resolution: 2
+
+gaussian_adapter:
+  gaussian_scale_min: 0.5
+  gaussian_scale_max: 15.0
+  sh_degree: 4

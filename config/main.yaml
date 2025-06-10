@@ -1,0 +1,106 @@
+defaults:
+  - /dataset: re10k
+  - optional dataset/view_sampler_dataset_specific_config: ${dataset/view_sampler}_${dataset}
+  - /model/decoder: splatting_cuda
+  - /model/encoder: raft
+  - /loss: [mse]
+
+wandb:
+  project: raft_gaussian_splat
+  entity: placeholder
+  name: placeholder
+  mode: disabled
+  id: null
+
+mode: train
+
+dataset:
+  overfit_to_scene: null
+
+data_loader:
+  # Avoid having to spin up new processes to print out visualizations.
+  train:
+    num_workers: 10
+    persistent_workers: true
+    batch_size: 4
+    seed: 1234
+  test:
+    num_workers: 4
+    persistent_workers: false
+    batch_size: 1
+    seed: 2345
+  val:
+    num_workers: 1
+    persistent_workers: true
+    batch_size: 1
+    seed: 3456
+
+optimizer:
+  lr: 2.e-4
+  warm_up_steps: 2000
+  cosine_lr: true
+
+checkpointing:
+  load: null
+  every_n_train_steps: 200  # 5000
+  save_top_k: -1
+  pretrained_model: null
+  resume: true
+
+train:
+  depth_mode: null
+  extended_visualization: false
+  print_log_every_n_steps: 1
+  wo_gs_rendering_loss_context: true
+  loss_reduction: sum
+  seq_loss_gamma: 0.8
+  point_matching_loss: false
+  point_matching_loss_weight: 1.0
+
+test:
+  output_path: outputs/test
+  compute_scores: false
+  eval_time_skip_steps: 0
+  save_image: true
+  save_video: false
+  test_iters: 6
+seed: 111123
+
+trainer:
+  max_steps: -1
+  val_check_interval: 0.5
+  gradient_clip_val: 0.5
+  num_sanity_val_steps: 2
+  num_nodes: 1
+  num_tasks_per_node: 1
+
+# ----- Additional params for default best model customization
+model:
+  encoder:
+    dropout: 0.0
+    alternate_corr: false
+    small: false
+    corr_levels: 4
+    corr_radius: 4
+    iters: 12
+    mixed_precision: false
+    corr_resolution: 8
+    optimization_search_space_dim: 1
+    wo_convex_upsampling: false
+    unet_backbone: false
+    unimatch_weights_path: "checkpoints/gmdepth-scale1-resumeflowthings-scannet-5d9d7964.pth"
+    wo_backbone_cross_attn: false
+    use_epipolar_trans: false
+    multiview_trans_attn_split: 2
+    disparity_init: random
+    near_depth_plane: 0.1
+    far_depth_plane: 100
+    scale_disp_update: 1.0
+    scale_density_update: 1.0
+    scale_gaussian_update: 1.0
+    upsampler_normalization: none
+    context_based_upsampling_iters: last
+    scale_multiplier_up_mask: 1.0
+
+
+output_dir: null
