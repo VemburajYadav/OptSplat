@@ -34,10 +34,10 @@ https://github.com/donydchen/mvsplat/assets/5866866/c5dc5de1-819e-462f-85a2-815e
 To get started, clone this project, create a conda virtual environment using Python 3.10+, and install the requirements:
 
 ```bash
-git clone https://github.com/donydchen/mvsplat.git
+git clone https://github.com/VemburajYadav/OptSplat.git
 cd mvsplat
-conda create -n mvsplat python=3.10
-conda activate mvsplat
+conda create -n optsplat python=3.10
+conda activate optsplat
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
