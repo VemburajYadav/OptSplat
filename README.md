@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">OptSplat: Recurrent Optimization for Generalizable Reconstruction <br> and
+  <h1 align="center">OptSplat: Recurrent Optimization for Generalizable Reconstruction and
 Novel View Renderings</h1>
   <p align="center">
     <a href="https://github.com/VemburajYadav/">Vemburaj Yadav</a>
@@ -10,15 +10,7 @@ Novel View Renderings</h1>
 
   </p>
   <h3 align="center">Under Review </h3>
-  <h3 align="center"><a href="https://arxiv.org/abs/2403.14627">Paper</a> | <a href="https://donydchen.github.io/mvsplat/">Project Page</a> | <a href="https://drive.google.com/drive/folders/14_E_5R6ojOWnLSrSVLVEMHnTiKsfddjU">Pretrained Models</a> </h3>
-<!--   <div align="center">
-    <a href="https://news.ycombinator.com/item?id=41222655">
-      <img
-        alt="Featured on Hacker News"
-        src="https://hackerbadge.vercel.app/api?id=41222655&type=dark"
-      />
-    </a>
-  </div> -->
+  <h3 align="center"><a href="https://www.dropbox.com/scl/fi/wyv27h9uinfivfh4gxzu7/OptSplat.pdf?rlkey=cqc3zd55jyc9laz4y45zfd91g&st=vw71fezc&dl=0">Paper</a> | <a href="https://VemburajYadav.github.io/OptSplat/">Project Page</a> | <a href="https://drive.google.com/drive/folders/1cqZx2Vl8Vf6XtpPPG2QA52GmjjDa3AkL?usp=drive_link">Pretrained Models</a> </h3>
 
 <ul>
 <li><b>08/11/24 Update:</b> Explore our <a href="https://github.com/donydchen/mvsplat360">MVSplat360 [NeurIPS '24]</a>, an upgraded MVSplat that combines video diffusion to achieve 360° NVS for large-scale scenes from just 5 input views! </li>  
