@@ -12,10 +12,16 @@ Novel View Renderings</h1>
   <h3 align="center">Under Review </h3>
   <h3 align="center"><a href="https://www.dropbox.com/scl/fi/wyv27h9uinfivfh4gxzu7/OptSplat.pdf?rlkey=cqc3zd55jyc9laz4y45zfd91g&st=vw71fezc&dl=0">Paper</a> | <a href="https://VemburajYadav.github.io/OptSplat/">Project Page</a> | <a href="https://drive.google.com/drive/folders/1cqZx2Vl8Vf6XtpPPG2QA52GmjjDa3AkL?usp=drive_link">Pretrained Models</a> </h3>
 
-<ul>
-<li><b>08/11/24 Update:</b> Explore our <a href="https://github.com/donydchen/mvsplat360">MVSplat360 [NeurIPS '24]</a>, an upgraded MVSplat that combines video diffusion to achieve 360° NVS for large-scale scenes from just 5 input views! </li>  
-<li><b>21/10/24 Update:</b> Check out Haofei's <a href="https://github.com/cvg/depthsplat">DepthSplat</a> if you are interested in feed-forward 3DGS on more complex scenes (DL3DV-10K) and more input views (up to 12 views)!</li>
-</ul>
+<p align="center">
+  <a href="">
+    <img src="https://VemburajYadav.github.io/OptSplat/static/images/IterPredictions2.png" alt="Logo" width="100%">
+  </a>
+</p>
+
+<p align="center">
+<strong>OptSplat encompasses an recurrent optimization framework for the iterative refinement and joint estimation of input view depth and novel view synthesis.</strong> <br>
+</p>
+
 <br>
 </p>
 
