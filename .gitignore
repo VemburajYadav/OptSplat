@@ -1,0 +1,33 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build output
+dist/
+build/
+
+# IDE files (VS Code, JetBrains)
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Mac system files
+*.DS_Store
+
+# Other common files to ignore
+*.swp
+*.swo
