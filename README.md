@@ -9,7 +9,7 @@ Novel View Renderings</h1>
     <a href="https://av.dfki.de/members/stricker/">Didier Stricker</a>
 
   </p>
-  <h3 align="center">Under Review </h3>
+  <h3 align="center">BMVC 2025 </h3>
   <h3 align="center"><a href="https://www.dropbox.com/scl/fi/wyv27h9uinfivfh4gxzu7/OptSplat.pdf?rlkey=cqc3zd55jyc9laz4y45zfd91g&st=vw71fezc&dl=0">Paper</a> | <a href="https://VemburajYadav.github.io/OptSplat/">Project Page</a> | <a href="https://drive.google.com/drive/folders/1cqZx2Vl8Vf6XtpPPG2QA52GmjjDa3AkL?usp=drive_link">Pretrained Models</a> </h3>
 
 <p align="center">
